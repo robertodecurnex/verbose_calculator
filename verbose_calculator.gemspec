@@ -9,7 +9,12 @@ Gem::Specification.new do |spec|
   spec.version = '0.1.0'
 
   spec.files = [
-    'lib/verbose_calculator.rb'
+    'lib/verbose_calculator.rb',
+    'lib/verbose_calculator/divided_by_operation.rb',
+    'lib/verbose_calculator/minus_operation.rb',
+    'lib/verbose_calculator/plus_operation.rb',
+    'lib/verbose_calculator/times_operation.rb',
+    'lib/verbose_calculator/verbose_operation.rb'
   ]
 
   spec.extra_rdoc_files = [
