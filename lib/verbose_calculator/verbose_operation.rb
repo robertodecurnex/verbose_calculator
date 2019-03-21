@@ -8,6 +8,13 @@ module VerboseCalculator
       @second_operand = number
     end
 
+    # Triggers the operation itself, returnig the resulting number.
+    def calculate number
+      @first_operand = number
+
+      return result()
+    end
+
   end
 
 end

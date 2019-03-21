@@ -20,9 +20,13 @@ module VerboseCalculator
 
   # Defines all the numbers and operators as local methods when included 
   def VerboseCalculator.included mod
-    NUMBERS_AS_WORDS.each do |number|
-        define_method number do
-          return NUMBERS_AS_WORDS.index number
+    NUMBERS_AS_WORDS.each do |number_as_symbol|
+        define_method number_as_symbol do |operation = nil|
+          number = NUMBERS_AS_WORDS.index number_as_symbol 
+          
+          return number unless operation
+
+          return operation.calculate(number)
         end
     end
 

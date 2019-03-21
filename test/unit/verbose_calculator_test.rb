@@ -26,4 +26,11 @@ class VerboseCalculatorTest < Minitest::Unit::TestCase
     assert_kind_of DividedByOperation, divided_by(1)
   end
 
+  def test_verbose_numbers_with_operator_as_param
+    assert_equal three(times(five)), 15
+    assert_equal six(plus(two)), 8
+    assert_equal one(minus(four)), -3
+    assert_equal eight(divided_by(two)), 4 
+  end
+
 end

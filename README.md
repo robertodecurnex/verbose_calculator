@@ -16,3 +16,8 @@ Functional approach to a verbose calculator
   six(minus(three))       #=> 3
   eight(divided_by(two))  #=> 4
 ```
+
+## Notes
+
+There are no type validations in place (nor validations over invalid values, like dividing by 0).
+Errors are delegated to the operations themselves.
