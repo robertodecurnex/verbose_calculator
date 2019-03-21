@@ -5,7 +5,7 @@ module VerboseCalculator
     private 
 
     def result 
-      return @first_operand / @second_operand
+      return @left_operand / @right_operand
     end
 
   end

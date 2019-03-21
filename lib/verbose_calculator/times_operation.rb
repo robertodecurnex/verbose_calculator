@@ -6,7 +6,7 @@ module VerboseCalculator
 
     # Returns the products of the operands.
     def result 
-      return @first_operand * @second_operand
+      return @left_operand * @right_operand
     end
 
   end
